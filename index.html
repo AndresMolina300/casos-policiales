@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Archivo Digital — Expedientes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-grid"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark" aria-hidden="true"></div>
+      <div>
+        <div class="brand-title">ARCHIVO DIGITAL</div>
+        <div class="brand-subtitle">Acceso autorizado — Expedientes</div>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <span class="pill">Modo: Consulta</span>
+    </div>
+  </header>
+
+  <main class="container fade-in">
+    <section class="hero">
+      <h1>Seleccione un expediente</h1>
+      <p class="muted">
+        Este sistema contiene expedientes con evidencia documental. La información mostrada está destinada a reconstrucción de hechos.
+      </p>
+    </section>
+
+    <section class="grid">
+      <article class="card case-card" data-href="museo.html">
+        <div class="card-head">
+          <div class="tag">Caso 03</div>
+          <div class="status">Activo</div>
+        </div>
+        <h2>Robo en el Museo</h2>
+        <p class="muted">
+          Incidente durante el cierre con público aún presente. Se reporta sustitución de pieza en vitrina.
+        </p>
+        <div class="card-actions">
+          <button class="btn primary">Abrir expediente</button>
+          <button class="btn ghost" disabled title="Próximamente">Vista previa</button>
+        </div>
+      </article>
+
+      <article class="card case-card disabled">
+        <div class="card-head">
+          <div class="tag">Caso 01</div>
+          <div class="status">Archivado</div>
+        </div>
+        <h2>Salazar</h2>
+        <p class="muted">Expediente corporativo. (Integración digital próximamente.)</p>
+        <div class="card-actions">
+          <button class="btn primary" disabled>Bloqueado</button>
+          <button class="btn ghost" disabled>Vista previa</button>
+        </div>
+      </article>
+
+      <article class="card case-card disabled">
+        <div class="card-head">
+          <div class="tag">Caso 02</div>
+          <div class="status">Archivado</div>
+        </div>
+        <h2>Darkwater</h2>
+        <p class="muted">Expediente campamento. (Integración digital próximamente.)</p>
+        <div class="card-actions">
+          <button class="btn primary" disabled>Bloqueado</button>
+          <button class="btn ghost" disabled>Vista previa</button>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <span class="muted">© Archivo Digital — Prototipo</span>
+      <span class="muted">v0.1</span>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

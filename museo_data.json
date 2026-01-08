@@ -1,0 +1,18 @@
+{
+  "titulo": "Robo en el Museo",
+  "descripcion": "Incidente durante el cierre con público aún presente.",
+  "sospechosos": [
+    {
+      "nombre": "Tomás Roldán",
+      "rol": "Seguridad",
+      "motivo": "Beneficio económico indirecto",
+      "nota": "Estaba asignado a la sala norte durante el cierre."
+    },
+    {
+      "nombre": "Laura Méndez",
+      "rol": "Restauradora",
+      "motivo": "Acceso técnico prolongado a la obra",
+      "nota": "Participó en la última inspección de conservación."
+    }
+  ]
+}

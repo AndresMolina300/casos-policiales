@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Expediente — Robo en el Museo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="theme-museum">
+  <div class="bg-grid"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <a class="brand-back" href="index.html" aria-label="Volver">←</a>
+      <div>
+        <div class="brand-title">EXPEDIENTE</div>
+        <div class="brand-subtitle">Robo en el Museo — Caso 03</div>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <span class="pill">Estado: Abierto</span>
+    </div>
+  </header>
+
+  <main class="container fade-in">
+    <section class="panel">
+      <div class="panel-head">
+        <div>
+          <h1>Registro de investigación</h1>
+          <p class="muted">
+            Incidente reportado durante protocolo de cierre. No se han establecido responsables.
+          </p>
+        </div>
+
+        <div class="panel-meta">
+          <div class="meta">
+            <div class="meta-k">Ventana crítica</div>
+            <div class="meta-v">18:40–18:55</div>
+          </div>
+          <div class="meta">
+            <div class="meta-k">Tipo</div>
+            <div class="meta-v">Sustitución</div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="tabs" role="tablist">
+        <button class="tab active" data-tab="personas" role="tab">Personas</button>
+        <button class="tab" data-tab="registros" role="tab">Registros</button>
+        <button class="tab" data-tab="inventario" role="tab">Inventario</button>
+        <button class="tab" data-tab="camaras" role="tab">Cámaras</button>
+        <button class="tab" data-tab="evidencias" role="tab">Evidencias</button>
+      </nav>
+
+      <section class="tabpanes">
+        <!-- PERSONAS -->
+        <div class="pane active" id="personas" role="tabpanel">
+          <div class="grid two">
+            <article class="card person">
+              <div class="person-top">
+                <div class="avatar" aria-hidden="true">AM</div>
+                <div>
+                  <h3>Alejandro Montalvo</h3>
+                  <p class="muted">Curador principal</p>
+                </div>
+              </div>
+              <div class="kv">
+                <div><span>Motivo (beneficio)</span><span>Prestigio profesional</span></div>
+                <div><span>Acceso</span><span>Sala / control técnico de exhibición</span></div>
+              </div>
+              <button class="btn ghost small" data-open="perfil-curador">Ver ficha</button>
+            </article>
+
+            <article class="card person">
+              <div class="person-top">
+                <div class="avatar" aria-hidden="true">BL</div>
+                <div>
+                  <h3>Beatriz Lemaire</h3>
+                  <p class="muted">Directora del museo</p>
+                </div>
+              </div>
+              <div class="kv">
+                <div><span>Motivo (beneficio)</span><span>Control institucional</span></div>
+                <div><span>Acceso</span><span>Registros / comunicación interna</span></div>
+              </div>
+              <button class="btn ghost small" data-open="perfil-directora">Ver ficha</button>
+            </article>
+
+            <article class="card person">
+              <div class="person-top">
+                <div class="avatar" aria-hidden="true">TR</div>
+                <div>
+                  <h3>Tomás Roldán</h3>
+                  <p class="muted">Encargado de seguridad (turno cierre)</p>
+                </div>
+              </div>
+              <div class="kv">
+                <div><span>Motivo (beneficio)</span><span>Dinero</span></div>
+                <div><span>Acceso</span><span>Rondas / monitoreo operativo</span></div>
+              </div>
+              <button class="btn ghost small" data-open="perfil-seguridad">Ver ficha</button>
+            </article>
+
+            <article class="card person">
+              <div class="person-top">
+                <div class="avatar" aria-hidden="true">LF</div>
+                <div>
+                  <h3>Lucía Ferrer</h3>
+                  <p class="muted">Restauración y conservación</p>
+                </div>
+              </div>
+              <div class="kv">
+                <div><span>Motivo (beneficio)</span><span>Dinero (encargo externo)</span></div>
+                <div><span>Acceso</span><span>Taller / materiales / manipulación técnica</span></div>
+              </div>
+              <button class="btn ghost small" data-open="perfil-restauradora">Ver ficha</button>
+            </article>
+          </div>
+
+          <div class="hint">
+            <strong>Nota:</strong> Las fichas describen roles. La reconstrucción debe basarse en cruces entre módulos.
+          </div>
+        </div>
+
+        <!-- REGISTROS -->
+        <div class="pane" id="registros" role="tabpanel">
+          <div class="card">
+            <h3>Registro de accesos (resumen)</h3>
+            <p class="muted">Muestra preliminar. (Luego metemos filtros y logs reales.)</p>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Hora</th>
+                    <th>Persona</th>
+                    <th>Área</th>
+                    <th>Evento</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>18:38</td><td>Tomás Roldán</td><td>Sala A</td><td>Ronda</td></tr>
+                  <tr><td>18:42</td><td>Lucía Ferrer</td><td>Taller</td><td>Salida</td></tr>
+                  <tr><td>18:46</td><td>Alejandro Montalvo</td><td>Sala A</td><td>Verificación</td></tr>
+                  <tr><td>18:52</td><td>—</td><td>Sala A</td><td>—</td></tr>
+                  <tr><td>19:05</td><td>Beatriz Lemaire</td><td>Oficina</td><td>Registro (nota interna)</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- INVENTARIO -->
+        <div class="pane" id="inventario" role="tabpanel">
+          <div class="grid two">
+            <div class="card">
+              <h3>Obra: “Nocturno en vidrio”</h3>
+              <p class="muted">Ficha técnica resumida (placeholder)</p>
+              <div class="kv">
+                <div><span>Tipo</span><span>Escultura / vidrio</span></div>
+                <div><span>Exhibición</span><span>Sala A — vitrina 3</span></div>
+                <div><span>Última verificación</span><span>15:10</span></div>
+              </div>
+            </div>
+
+            <div class="card">
+              <h3>Hallazgo durante cierre</h3>
+              <p class="muted">Registro preliminar del curador (placeholder)</p>
+              <div class="kv">
+                <div><span>Hora</span><span>19:14</span></div>
+                <div><span>Observación</span><span>Inconsistencia material / sospecha de sustitución</span></div>
+              </div>
+              <button class="btn ghost small" data-open="nota-curador">Ver nota</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CAMARAS -->
+        <div class="pane" id="camaras" role="tabpanel">
+          <div class="card">
+            <h3>Mapa de cámaras (resumen)</h3>
+            <p class="muted">Por ahora: listado. Luego lo hacemos visual.</p>
+            <ul class="list">
+              <li><span class="dot"></span> CAM-01 — Pasillo principal</li>
+              <li><span class="dot"></span> CAM-02 — Entrada Sala A</li>
+              <li><span class="dot"></span> CAM-03 — Sala A (vitrina 3)</li>
+              <li><span class="dot"></span> CAM-04 — Taller</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- EVIDENCIAS -->
+        <div class="pane" id="evidencias" role="tabpanel">
+          <div class="grid two">
+            <div class="card">
+              <h3>Foto: vitrina 3</h3>
+              <p class="muted">Placeholder. Luego ponemos imagen real.</p>
+              <div class="media placeholder"></div>
+              <button class="btn ghost small" disabled>Ampliar</button>
+            </div>
+            <div class="card">
+              <h3>Documento: protocolo de cierre</h3>
+              <p class="muted">Placeholder. Luego metemos PDF o extracto.</p>
+              <button class="btn primary small" data-open="protocolo-cierre">Abrir</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <footer class="footer">
+      <span class="muted">Archivo Digital — Caso 03</span>
+      <span class="muted">v0.1</span>
+    </footer>
+  </main>
+
+  <!-- MODALS -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-label="Detalle">
+      <div class="modal-head">
+        <div class="modal-title" id="modalTitle">Detalle</div>
+        <button class="icon-btn" data-close aria-label="Cerrar">✕</button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
