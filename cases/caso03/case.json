@@ -1,0 +1,23 @@
+{
+  "id": "caso03",
+  "title": "Robo en el Museo",
+  "setting": "Moderno",
+  "difficulty": "Baja-Media",
+  "time_estimate_minutes": 60,
+  "brief": {
+    "what_happened": "Durante el cierre del museo, se reporta que una pieza fue sustituida en la vitrina principal.",
+    "goal": "Reconstruir cómo ocurrió la sustitución y quién tuvo oportunidad real, sustentado con evidencia.",
+    "constraints": [
+      "No asumir culpables: todo se sustenta con documentos.",
+      "Buscar contradicciones cruzando horarios, accesos y testimonios."
+    ]
+  },
+  "ending": {
+    "type": "informe",
+    "fields": [
+      { "id": "theory", "label": "Hipótesis final (qué pasó)", "type": "text" },
+      { "id": "suspect", "label": "Principal responsable", "type": "text" },
+      { "id": "key_evidence", "label": "Evidencia clave", "type": "text" }
+    ]
+  }
+}
