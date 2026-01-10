@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "cases": [
+    {
+      "id": "caso03",
+      "tag": "Caso 03",
+      "title": "Robo en el Museo",
+      "status": "Activo",
+      "summary": "Incidente durante el cierre con público aún presente. Se reporta sustitución de pieza en vitrina.",
+      "entry": "museo.html",
+      "folder": "caso03"
+    }
+  ]
+}
