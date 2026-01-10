@@ -1,0 +1,12 @@
+{
+  "documents": [
+    {
+      "id": "museo_data",
+      "title": "Datos del caso (JSON)",
+      "type": "json",
+      "path": "/museo_data.json",
+      "available_from_start": true,
+      "tags": ["Datos"]
+    }
+  ]
+}
